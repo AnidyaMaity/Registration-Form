@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="RegistrationForm.css">
+</head>
+<body>
+    <div class="background-box"></div>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form action="form.php">
+            <label for="Register">
+                <h3>Register As</h3>
+            </label>
+            <select name="Register" id="Register">
+                <option value="select">Select</option>
+                <option value="faculty">Faculty</option>
+                <option value="student">Student</option>
+            </select><br>
+                <h3>Name</h3>
+            <input type="text" id="FirstName" name="FirstName" placeholder="Enter Your First Name"><br><br>
+            <input type="text" id="LastName" name="LastName" placeholder="Enter Your Last Name"><br>
+            <label for="MobileNumber">
+                <h3>Contact</h3>
+            </label>
+            <input type="text" id="MobileNumber" name="MobileNumber" placeholder="Enter Your Mobile Number"> <br>
+            <h3>Gender</h3>
+            <label for="GenderMale">
+                <input type="radio" value="Male" name="Gender" id="GenderMale">Male
+            </label> 
+            <label for="GenderFemale">
+                <input type="radio" value="Female" name="Gender" id="GenderFemale">Female
+            </label><br>
+            <label for="DOB">
+                <h3>Date Of Birth</h3>
+            </label>
+            <input type="date" id="DOB" name="DOB"><br>
+
+            <label for="Country">
+                <h3>Country</h3>
+            </label>
+            <select name="Country" id="Country">
+                <option value="no_country">Select Your Country</option>
+                <option value="australia">Australia</option>
+                <option value="el-salvador">El Salvador</option>
+                <option value="estonia">Estonia</option>
+                <option value="india">India</option>
+                <option value="israel">Israel</option>
+                <option value="spain">Spain</option>
+            </select><br>
+            <label for="Address">
+                <h3>Address</h3>
+            </label>
+            <textarea name="Address" id="Address" cols="30" rows="10" placeholder="Enter Your Address"></textarea><br>
+            <h3>Skill Performance</h3><b>
+            <label for="Curiosity">Curiosity</label>
+            <input type="checkbox" name="Skills" value="Curiosity" id="Curiosity"><br>
+            <label for="Imagination">Imagination</label>
+            <input type="checkbox" name="Skills" value="Imagination" id="Imagination"><br>
+            <label for="Adaptability">Adaptability</label>
+            <input type="checkbox" name="Skills" value="Adaptability" id="Adaptability"><br>
+            <label for="ProblemSolving">Problem Solving</label>
+            <input type="checkbox" name="Skills" value="ProblemSolving" id="ProblemSolving"><br>
+            <label for="Communication">Communication</label>
+            <input type="checkbox" name="Skills" value="Communication" id="Communication"><br><br></b>
+            <div class="button-container">
+                <input type="reset" value="Reset"> <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
